@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM + router</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="site">
+    <div class="layout">
+        <header class="layout__header">
+            <h1 class="layout__title">Header</h1>
+        </header>
+
+        <main class="layout__main">
+            <nav class="layout__nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+
+            <section id="app-content" class="content">
+                <article class="panel panel-services">
+                </article>
+            </section>
+            </main>
+        <footer class="layout__footer">
+            <p class="layout__footer-text">Footer</p>
+        </footer>
+    </div>
+
+    <script src="router.js"></script>
+</body>
+</html>
